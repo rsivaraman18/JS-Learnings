@@ -1,1 +1,258 @@
-s
+let mytag = document.querySelector('p') 
+mytag.textContent ='para 1 changed using JS'
+
+
+let mytag1 = document.querySelectorAll('p') ;
+mytag1.forEach((value ) =>{
+    value.textContent = 'changed using loop in JS'
+}) ;
+
+
+let mytag2 = document.querySelectorAll('p') ;
+mytag1.forEach((value ) =>{
+    value.remove( ) 
+}) ;
+
+
+// ********************************************************** 
+
+
+let mytag2 = document.querySelectorAll('p') ;
+mytag1.forEach((value ) =>{
+    value.remove( ) 
+}) ;
+
+let mytag1 = document.querySelectorAll('p') ;
+mytag1.forEach((value ) =>{
+    value.textContent = 'changed using loop in JS'
+}) ;
+
+*/
+
+let newPtag = document.createElement('p' ) ;
+newPtag.textContent = 'Created From JS'
+
+document.querySelector('body').appendChild(newPtag ) 
+
+// *************************************************************************
+
+// 03 - class
+
+/*
+document.querySelector('button').addEventListener('click',( myevent) =>{
+    document.querySelector('h1').textContent ='js'
+}) 
+*/
+
+ function red() {
+    let bgval = document.querySelector('body')
+    bgval.style.background ='red';
+ }
+
+ function blue() {
+    let bgval = document.querySelector('body')
+    bgval.style.background ='blue';
+ }
+
+ function fontcolor() {
+    let fontval = document.querySelector('h1')
+    fontval.style.color ='blue';
+ }
+
+ function adding() {
+    let myul =document.querySelector('ul')
+    let newLi =document.createElement('li')
+    newLi.textContent ='created by JS'
+    myul.appendChild(newLi)
+ }
+
+ function mouse() {
+    let bgval = document.querySelector('body')
+    bgval.style.background ='blue';
+}
+
+*****************************************************************************
+// Class 4
+
+
+//arrow 1
+let greet1 =  (name1) =>`hello ${name1}`
+console.log(greet1('sivaraman' ))
+
+//arrow2
+let greet2 = (name2) => {
+    return `welcome ${name2}`
+}
+console.log(greet2('Super star'))
+
+//arrow 3
+let greet3 = (name3) => {
+    console.log(name3)  
+}
+greet3('Java Script')
+
+
+**************************************************************************
+Class 5 -- Function
+
+
+//function
+function greet1(user ) {
+    console.log(`Greet1 : welcome  ${user}` ) 
+}
+greet1( 'siva') 
+
+console.log('******' ) 
+
+//function using variable
+let greet2 = function(user1 ) {
+    console.log(`bye ${user1}` ) 
+}
+
+greet2( 'siva') 
+
+
+****************************************************************
+class 6 - Object MEthod Keyword
+
+
+alert('Object method Keyword' ) 
+
+// object method keyword
+let myobject = {
+    language : 'tamil,english,Hindhi',
+    price : 'Rs 1000',
+    ready: function(data) {
+        console.log(data) 
+    }
+    
+    
+}
+
+myobject.ready('sivaraman') 
+
+******************************************************************************
+
+class 7 Objects
+
+//  ( ) 
+alert('Hii siva' ) 
+
+let myobject = {
+    Id:'1',
+    course :'HTML,CSS,JS',
+    cont : '9600543141,9856985698,87897897',
+    language : 'tamil,english,Hindhi'
+}
+
+console.log(myobject.language) ;
+console.log ( ` ${myobject.course} course is available in ${myobject.language} ` ) 
+
+*********************************************************************
+
+// class 8 
+
+
+
+let box=[];
+//push addds value at end 
+box.push('bike');
+box.push('car');
+box.push('cycle');
+box.push('bus');
+console.log(box) 
+
+for(i=0; i< box.length; i++) {
+    console.log(`${ i+1} is ${box[i]}`) 
+}
+
+******************************************************
+
+//class 9 
+
+
+let box=['bike','car','cycle','bus'];
+
+
+
+//find index1
+let pos = box.findIndex(function  (val) {
+    return val =='cycle'
+}) 
+
+console.log(pos) 
+
+//find ibdex 2
+let findme =function(ourlist,search){
+    let result = ourlist.findIndex(function(val){
+        return val.toLowerCase ()  == search.toLowerCase ()
+    })
+    return result
+}
+
+z=findme(box,'CyCle')
+console.log(z)
+ 
+
+***********************************************************
+
+//class 10
+
+//  ( ) 
+//alert('user login' ) 
+let email = 'Siva@gmail.com';
+let pwd = '123456';
+
+//console.log( email.toLocaleLowerCase( ) ) ;
+
+//console.log( email.includes('gmail')) ;     //True or false
+
+
+//email check
+function emailcheck(user ) {
+    if  (user.includes ( '@')) {
+        return true;
+
+    } else{
+        return false;
+    }
+};
+
+console.log(emailcheck(email)     )
+
+
+//pwd check
+function passcheck(userpass ) {
+    if  (  (userpass.includes('@') ) &&  ( userpass.length>5)  ) {
+        return true;
+
+    } else{
+        return false;
+    }
+};
+
+console.log(passcheck(pwd))
+
+*******************************************************
+
+//class 11
+
+
+//addEventListener
+
+document.querySelector('button').addEventListener('click',(val) => {
+    console.log('button is clicked');
+    let description=document.querySelector('p') 
+   description.textContent ='Js class lectures are taken by Siva'
+    
+    
+});  
+
+
+
+
+//let mybutton = document.querySelector('button')
+    //mybutton.textContent='Added ddddd';//
+
+
+
