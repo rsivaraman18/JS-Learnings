@@ -1,0 +1,40 @@
+body{
+    background-color: cornflowerblue;
+};
+
+.box{
+    font-size: medium;
+    font-weight: 300;
+    justify-content: center;
+}
+
+.container{
+    display:flex;
+    
+}
+
+.box1{
+    flex-basis: 50%;
+    margin-left: 5%;
+}
+
+.box2{
+    flex-basis: 50%;
+}
+
+#imgsize{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#index{
+    align: center;
+}
+
+
+.container3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
