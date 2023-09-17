@@ -1,0 +1,25 @@
+
+
+$(document).on("click", ".delete-product" , function( ){
+    var tr =$(this).closest("tr");
+    console.log(tr )
+    var data = {
+        product_id : tr.data("id")
+    };
+    var isDelete = confirm( "Are you sure to delete " + tr.data("title"))
+    if ( isDelete){
+        console.log( "deleted")
+        //callApi("POST" ,url,data )
+    }
+});
+
+
+
+/*
+$(document).ready( function ( ){
+    data = $("this").closest("tr")
+    console.log(data )
+})
+
+*/
+

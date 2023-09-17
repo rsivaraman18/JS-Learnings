@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TRIAL PAGE </title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-5 offset-md-4">
+            <h2>welcome JS class</h2>
+            <h3>Making dropdown List using Array object</h3>
+
+            <label for="myselection">Select Items </label>
+            <select name="" id="myselection">
+                <option value="">Choose me</option>
+
+            </select>   
+
+        </div>
+        <div class="row" id="display"></div>
+    </div>
+    
+    <script>
+        //()
+        const scoreboard =[
+                            {name: "scoobee doo " ,goals:5 } ,
+                            {name: "Tom & jerry " ,goals:15} ,
+                            {name: "Donald duck " ,goals:25} 
+                        ];
+        scoreboard.forEach( (person) => {
+            let opt   = document.createElement("option");
+            opt.text  = person.name
+            opt.value = person.goals
+            myselection.appendChild(opt)
+        });
+        myselection.onchange = function (){
+            display.innerText = myselection.value+"goals"
+        };
+        
+    </script>
+</body>
+</html>

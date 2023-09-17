@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SElect Index of Table </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h4>Learn to select entire row without any buttons.</h4>
+        <h6>Table 1</h6>
+        <table class="table-bordered" name="table1">
+            <thead > 
+                <tr>
+                    <th>S.No</th>
+                    <th>name</th>
+                    <th>Location</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="selectme(this)">
+                    <td>1</td>
+                    <td>Siva</td>
+                    <td>Chennai</td>
+                   
+                </tr>
+                <tr onclick="selectme(this)">
+                    <td>2</td>
+                    <td>Lakshan</td>
+                    <td>Madurai</td>
+                   
+                </tr>
+                <tr onclick="selectme(this)">
+                    <td >3</td>
+                    <td>Temon</td>
+                    <td>Rameshwaram</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <h4 id="para"></h4>
+        <br>
+        <br>
+    </div>
+
+
+
+
+    <div class="container">
+        <h4>Learn to select entire row with a button.</h4>
+        <h6>Table 2</h6>
+        <table class="table-bordered" name="table2">
+            
+            <thead > 
+                <tr>
+                    <th>S.No</th>
+                    <th>name</th>
+                    <th>Location</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <td>1</td>
+                    <td>Siva</td>
+                    <td>Chennai</td>
+                    <td><input type="submit" value="delete" onclick="deleteme(this)"></td>
+                </tr>
+                <tr >
+                    <td>2</td>
+                    <td>Lakshan</td>
+                    <td>Madurai</td>
+                    <td><input type="submit" value="delete" onclick="deleteme(this)"></td>
+                </tr>
+                <tr >
+                    <td >3</td>
+                    <td>Temon</td>
+                    <td>Rameshwaram</td>
+                    <td><input type="submit" value="delete" onclick="deleteme(this)"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h6 id="para2"></h6>
+    </div>
+
+    
+    
+</body>
+<script src="style6.js"></script>
+</html>
